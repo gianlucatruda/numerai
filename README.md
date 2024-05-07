@@ -1,7 +1,8 @@
 # Gianluca's Numerai models and experiments
 
-
 From May 2021 to Jan 2023, I competed as a ML/Data Scientist on [Numerai](https://numer.ai/), the "hardest data science tournament in the world".
+
+You can read more about this [on my blog](http://gianluca.ai/numerai-models).
 
 - Each week, I generated stock market predictions using several ML models I’ve developed.
 - I staked those models with my own money (using Numerai's cryptocurrency, Numeraire).
@@ -27,16 +28,20 @@ I did everything in Jupyter notebooks that I ran in Google Colab.
 
 This was great for the experimentation process and for being able to trigger my models to automatically run and submit predictions via a web browser from anywhere in the world. But in general, it's not the best setup: Jupyter notebooks are hard to version and maintain and although Colab is great for getting access to decent GPUs for free/cheap, it's pretty janky. 
 
-```
+```plaintext
 .
+├── LICENSE
 ├── README.md
 ├── experiments
 │   ├── Numerai development v3_21.ipynb
 │   └── Numerai signals development v0.2.ipynb
 └── models
     ├── Numerai GTRUDA stable.ipynb
-    └── Numerai V3X stable.ipynb
+    ├── Numerai V3X stable.ipynb
+    └── v3x_example.py
 ```
+
+If you just want a quick sense of how my best model worked, check out the snippet [models/v3x_example.py](models/v3x_example.py)
 
 - `experiments/` contains the notebooks where I analysed the data, tried new feature engineering techniques, and compared my new model ideas against various baselines (including my own best-performing model, `V3X`).
 - `models/` contains the notebooks that I would run each week to submit predictions from my current "stable" models:
@@ -52,5 +57,4 @@ This was great for the experimentation process and for being able to trigger my 
 4. Start staking your own models with small sums that you're happy to lose. Get skin in the game.
 5. Come back here to get ideas for other approaches to try and model architecture inspiration. 
 6. Check out the [Numerai forum](https://forum.numer.ai/) and bounce ideas with others. Most people are doing this for fun, so they're willing to share information and code.
-
 
