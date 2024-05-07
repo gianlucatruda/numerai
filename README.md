@@ -19,7 +19,7 @@ I learned a ton about:
 
 But in late 2022, I started my own AI company and couldn't devote any more time to improving my models. Numerai has also been expanding their underlying dataset, so I would have had to spend a lot of development time to update and expand my models. I decided to stop competing weekly.
 
-So I've decided to open-source my code as a jumping off point from others who are interesting in learning more about Numerai, data science, and quantitative trading.
+So I'm open-sourcing my code as a jumping-off point for others who are interesting in learning more about Numerai, data science, and quantitative trading.
 
 ## What you'll find 
 
